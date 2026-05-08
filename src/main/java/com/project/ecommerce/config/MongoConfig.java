@@ -21,7 +21,7 @@ public class MongoConfig extends AbstractMongoClientConfiguration {
     @Bean
     @Override
     public MongoClient mongoClient() {
-        return MongoClients.create("SPRING_DATA_MONGODB_URI");
+        return MongoClients.create("mongodb+srv://ecommerceUser:Swathigv77@cluster0.ktax2kc.mongodb.net/ecommerceDB?retryWrites=true&w=majority");
     }
 
     @Override
