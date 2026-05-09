@@ -26,6 +26,7 @@ public class JwtFilter extends OncePerRequestFilter {
             throws ServletException, IOException {
 
         String path = request.getRequestURI();
+        System.out.println("JWT FILTER PATH: " + path);
 
         // ✅ SKIP AUTH FOR LOGIN & REGISTER
         if (path.contains("/user/login") || path.contains("/user/register")) {

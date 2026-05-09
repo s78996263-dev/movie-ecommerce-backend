@@ -20,28 +20,16 @@ public class CorsConfig {
 
         CorsConfiguration config = new CorsConfiguration();
 
-
-        // Allow frontend access
         config.setAllowedOrigins(Arrays.asList(
-                "https://s78996263-dev.github.io"
+                "https://movie-ecommerce-frontend.onrender.com"
         ));
 
-        // Allow frontend access
-        config.setAllowedOrigins(Arrays.asList("*"));
-
-        // Allow HTTP methods
         config.setAllowedMethods(Arrays.asList(
-                "GET",
-                "POST",
-                "PUT",
-                "DELETE",
-                "OPTIONS"
+                "GET","POST","PUT","DELETE","OPTIONS"
         ));
 
-        // Allow headers
         config.setAllowedHeaders(Arrays.asList("*"));
 
-        // Allow credentials
         config.setAllowCredentials(false);
 
         UrlBasedCorsConfigurationSource source =
